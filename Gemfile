@@ -27,6 +27,9 @@ gem "webpacker"
 group :development do
   gem "listen"
   gem "rack-mini-profiler", require: false
+  gem "rubocop", require: false
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
   gem "spring"
   gem "web-console"
 end
