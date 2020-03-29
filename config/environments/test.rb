@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The test environment is used exclusively to run your application's
 # test suite. You never need to work with it otherwise. Remember that
 # your test database is "scratch space" for the test suite and is wiped
@@ -46,6 +48,6 @@ Rails.application.configure do
   # Raises error for missing translations.
   config.action_view.raise_on_missing_translations = true
   config.assets.raise_runtime_errors = true
-  config.action_mailer.default_url_options = { host: "www.example.com" }
-  config.action_mailer.asset_host = "http://www.example.com"
+  config.action_mailer.default_url_options = { host: 'www.example.com' }
+  config.action_mailer.asset_host = 'http://www.example.com'
 end
