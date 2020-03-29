@@ -89,6 +89,7 @@ GEM
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     crass (1.0.6)
+    diff-lcs (1.3)
     docile (1.3.2)
     dotenv (2.7.5)
     dotenv-rails (2.7.5)
@@ -96,6 +97,11 @@ GEM
       railties (>= 3.2, < 6.1)
     erubi (1.9.0)
     execjs (2.7.0)
+    factory_bot (5.1.2)
+      activesupport (>= 4.2.0)
+    factory_bot_rails (5.1.1)
+      factory_bot (~> 5.1.0)
+      railties (>= 4.2.0)
     ffi (1.12.2)
     formulaic (0.4.1)
       activesupport
@@ -183,6 +189,23 @@ GEM
     recipient_interceptor (0.2.0)
       mail
     regexp_parser (1.7.0)
+    rspec-core (3.9.1)
+      rspec-support (~> 3.9.1)
+    rspec-expectations (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-rails (4.0.0)
+      actionpack (>= 4.2)
+      activesupport (>= 4.2)
+      railties (>= 4.2)
+      rspec-core (~> 3.9)
+      rspec-expectations (~> 3.9)
+      rspec-mocks (~> 3.9)
+      rspec-support (~> 3.9)
+    rspec-support (3.9.2)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -198,6 +221,8 @@ GEM
       sprockets-rails
       tilt
     semantic_range (2.3.0)
+    shoulda-matchers (4.3.0)
+      activesupport (>= 4.2.0)
     simplecov (0.18.5)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -256,6 +281,7 @@ DEPENDENCIES
   bootsnap
   bundler-audit (>= 0.5.0)
   dotenv-rails
+  factory_bot_rails
   formulaic
   honeybadger
   launchy
@@ -268,7 +294,10 @@ DEPENDENCIES
   rack-mini-profiler
   rails (~> 6.0.0)
   recipient_interceptor
+  rspec-mocks
+  rspec-rails
   sassc-rails
+  shoulda-matchers
   simplecov
   skylight
   spring

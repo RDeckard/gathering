@@ -37,6 +37,11 @@ group :development, :test do
   gem "dotenv-rails"
   gem "pry-byebug"
   gem "pry-rails"
+
+  gem "factory_bot_rails"
+  gem "rspec-mocks"
+  gem "rspec-rails"
+  gem "shoulda-matchers"
 end
 
 group :test do
