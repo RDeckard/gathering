@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @workshop_template.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @workshop_template.description %>
+</p>
+
+<%= link_to 'Edit', edit_workshop_template_path(@workshop_template) %> |
+<%= link_to 'Back', workshop_templates_path %>
