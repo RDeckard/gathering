@@ -25,6 +25,8 @@ gem 'title'
 gem 'tzinfo-data', platforms: %i[mingw x64_mingw mswin jruby]
 gem 'webpacker'
 
+gem 'administrate'
+
 group :development do
   gem 'listen'
   gem 'rack-mini-profiler', require: false
